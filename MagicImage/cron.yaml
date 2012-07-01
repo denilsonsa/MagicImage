@@ -1,0 +1,4 @@
+cron:
+- description: clean old entries
+  url: /task/clean
+  schedule: every 48 hours

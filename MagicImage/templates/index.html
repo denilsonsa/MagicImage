@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>The Magic Image - Autostereogram generator</title>
+		<meta name="description" content="The Magic Image is a autostereogram generator. An Autostereogram is an image designed to create the visual illusion of a three-dimensional (3D) scene from a two-dimensional image in the human brain. In order to perceive 3D shapes in these autostereograms, the brain must overcome the normally automatic coordination between focusing and vergence."/>
+		<meta name="keywords" content="autostereogram, generator, 3d image, illusion, python, opensource"/>
+		<meta name="author" content="Cobalys Systems" />
+		<link type="text/css" rel="stylesheet" href="/static/css/style.css" />
+		<link rel="shortcut icon" href="/static/favicon.ico"/>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<style type="text/css">html{padding:0px;margin:0px;}
+		body{ position: relative; margin:0px;}
+		</style>
+		<![endif]-->
+		<script type="text/javascript" src="/static/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="/static/js/parallax.js"></script>
+		<script type="text/javascript" src="/static/js/analytics.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Marko+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="top">
+			<div id="main">
+				<header>
+					<nav>
+						<div class="red">
+							<a class="scroll" href="#about">About</a>
+						</div>
+						<div class="green">
+							<a class="scroll" href="#how-to-visualize">How to Visualize</a>
+						</div>
+						<div class="blue">
+							<a class="scroll" href="#how-to-create">How to Create</a>
+						</div>
+					</nav>
+					<a href="http://magic-image.appspot.com/"><img id="logo" alt="The Magic Image" src="/static/images/logo.png" /></a>
+				</header>
+				<div id="image">
+					{% if image_id %}
+					<img alt="Stereogram" src="img?img_id={{ image_id }}"/>
+					{% else %}
+					<img alt="Stereogram" src="/static/images/stereogram.png"/>
+					{% endif %}
+					<form action="/stereogram" enctype="multipart/form-data" method="post">
+						<div class="upload-button button big" id="generate">
+							Generate
+							<input class="file-input" type="file" onchange="this.form.submit()" multiple="multiple" name="image">
+						</div>
+					</form>
+				</div>
+				<article id="how-to-create">
+					<h2>How to Create</h2>
+					<a class="scroll scroll-top" href="#top">top</a>
+					<ol>
+						<li>
+							Click <strong>Generate</strong>.
+						</li>
+						<li>
+							Select the deph map you want to render.
+						</li>
+						<li>
+							The main image will be updated with you picture.
+						</li>
+					</ol>
+					<a class="scroll" href="#image"><img alt="How to Create" src="/static/images/how-generate.jpg" /></a>
+				</article>
+				<article id="how-to-visualize">
+					<h2>How to Visualize</h2>
+					<a class="scroll scroll-top" href="#top">top</a>
+					<p>
+						An autostereogram is an optical illusion of depth usually observed by allowing the eyes to focus behind the image (diverge), or, less often, in front of it (converge). These two visualization methods are known as wall-eyed and cross-eyed, respectively.
+					</p>
+					<h3>Wall-eyed</h3>
+					<p>
+						Hold the picture in front of the face, with the nose touching the picture. With the picture so close to their eyes, most people cannot focus on the picture. The brain may give up trying to move eye muscles in order to get a clear picture. If one slowly pulls back the picture away from the face, while refraining from focusing or rotating eyes, at some point the brain will lock onto a pair of patterns when the distance between them matches the current convergence degree of the two eyeballs
+						Stare at an object behind the picture in an attempt to establish proper divergence, while keeping part of the eyesight fixed on the picture to convince the brain to focus on the picture. A modified method has the viewer focus on their reflection on a reflective surface of the picture, which the brain perceives as being located twice as far away as the picture itself.
+					</p>
+					<h3>Cross-eyed</h3>
+					<p>
+						For crossed-eyed autostereograms, a different approach needs to be taken. The viewer may hold one finger between their eyes and move it slowly towards the picture, maintaining focus on the finger at all times, until they are correctly focused on the spot that will allow them to view the illusion.
+					</p>
+				</article>
+				<footer id="about">
+					<h2>About</h2>
+					<p>
+						<strong>The Magic Image</strong> is a autostereogram generator. An Autostereogram is an image designed to create the visual illusion of a three-dimensional (3D) scene from a two-dimensional image in the human brain. In order to perceive 3D shapes in these autostereograms, the brain must overcome the normally automatic coordination between focusing and vergence.
+					</p>
+					<h3> Credits </h3>
+					<p>
+						The Magic image is an open source project developed and designed by <strong>Cobalys Systems</strong>. Some parts of the source code and the textures used for the design use and are based in other open source projects and Creative Commons Media.
+					</p>
+					<h3>Third Party Media and Code included</h3>
+					<ul>
+						<li>
+							Autostereogram Engine by Denilson Sá.<a target="_blank" class="external-link" href="https://bitbucket.org/denilsonsa/autostereogram/">Link</a>
+						</li>
+						<li>
+							Depth map of a Shark by Hsu, March 2005.<a target="_blank" class="external-link" href="http://en.wikipedia.org/wiki/User:Fred_Hsu">Link</a>
+						</li>
+						<li>
+							CSS3 Github Buttons (Nicolas Gallagher).<a target="_blank" class="external-link" href="https://github.com/necolas/css3-github-buttons">Link</a>
+						</li>
+						<li>
+							Stereogram pattern by ~Camxso.<a target="_blank" class="external-link" href="http://camxso.deviantart.com/art/Mellow-Mint-Photoshop-Patterns-97816494">Link</a>
+						</li>
+						<li>
+							Diamond pattern by Parée Erica.<a target="_blank" class="external-link" href="http://www.flickr.com/photos/8078381@N03/2241758262/in/photostream/">Link</a>
+						</li>
+						<li>
+							Papper pattern by Photoshoptutorials.ws.<a target="_blank" class="external-link" href="www.photoshoptutorials.ws">Link</a>
+						</li>
+					</ul>
+					<h3>Powered by:</h3>
+					<ul>
+						<li>
+							Google App Engine.<a class="external-link" href="https://developers.google.com/appengine/">Link</a>
+						</li>
+						<li>
+							Github.<a class="external-link" href="https://github.com/">Link</a>
+						</li>
+						<li>
+							jQuery.<a class="external-link" href="http://jquery.com/">Link</a>
+						</li>
+						<li>
+							Python.<a class="external-link" href="http://www.python.org/">Link</a>
+						</li>
+					</ul>
+					<div class="nav-top">
+						<a class="scroll scroll-top" href="#top">Go to Top</a>
+					</div>
+				</footer>
+			</div>
+			<div class="card three">
+				<img alt="Magic Cards" src="/static/images/card-3.png"/>
+			</div>
+			<div class="card two"><img alt="Magic Cards" src="/static/images/card-2.png"/>
+			</div>
+			<div class="card one">
+				<img alt="Magic Cards" src="/static/images/card-1.png"/>
+			</div>
+		</div>
+	</body>
+</html>
