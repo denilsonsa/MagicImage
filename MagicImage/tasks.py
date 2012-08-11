@@ -9,5 +9,4 @@ class CleanOldImages(webapp2.RequestHandler):
         db.delete(q.fetch(None))
         self.response.out.write("Old Images cleaned.")
 
-
 app = webapp2.WSGIApplication([('/task/clean', CleanOldImages),], debug=True)

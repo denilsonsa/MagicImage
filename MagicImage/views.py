@@ -14,12 +14,12 @@ class MainPage(webapp2.RequestHandler):
 
 class Stereogram(webapp2.RequestHandler):
     def post(self):
-        avatar = self.request.get("image")
+        input_image = self.request.get("image")
         try:
-            out = make_stereogram(avatar, 'pattern.png')
-            avatar = out.getvalue()
+            out = make_stereogram(input_image, 'pattern.png')
+            output_image = out.getvalue()
             stereo = Stereo()
-            stereo.image = db.Blob(avatar)
+            stereo.image = db.Blob(output_image)
             stereo.put()
             image_id = stereo.key()
             template_values = {

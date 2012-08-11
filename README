@@ -1,1 +1,21 @@
- 
+The Magic Image
+===============
+
+The Magic Image is a autostereogram generator. An Autostereogram is an image designed to create the visual illusion of a three-dimensional (3D) scene from a two-dimensional image in the human brain.
+Credits
+The Magic image is an open source project developed and designed by Cobalys. Some parts of the source code and the textures used for the design use and are based in other open source projects and Creative Commons Media.
+Third Party Media and Code included
+
+
+Autostereogram Engine by Denilson Sá: https://bitbucket.org/denilsonsa/autostereogram/
+Depth map of a Shark by Hsu, March 2005: http://en.wikipedia.org/wiki/User:Fred_Hsu
+CSS3 Github Buttons (Nicolas Gallagher): https://github.com/necolas/css3-github-buttons
+Stereogram pattern by ~Camxso: http://camxso.deviantart.com/art/Mellow-Mint-Photoshop-Patterns-97816494
+Diamond pattern by Parée Erica: http://www.flickr.com/photos/8078381@N03/2241758262/in/photostream/
+Papper pattern by Photoshoptutorials.ws: http://magic-image.appspot.com/www.photoshoptutorials.ws
+
+Powered by:
+Google App Engine: https://developers.google.com/appengine/
+Github: https://github.com/
+jQuery: http://jquery.com/
+Python: http://www.python.org/

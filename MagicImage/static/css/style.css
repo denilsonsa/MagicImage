@@ -7,7 +7,7 @@
 body {
     background-color: #000;
     overflow-x: hidden;
-    background-image: url('../images/background2.jpg');
+    background-image: url('../images/background-diamonds.jpg');
     background-attachment: fixed;
 }
 a {
@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 image {
-    border: 0px solid #fff;
+    border-width: 0;
 }
 header {
     height: 120px;
@@ -51,7 +51,7 @@ ul {
     background-color: white;
     margin: auto;
     z-index: 1;
-    border: 1px solid #444;
+    border: 1px solid #333;
     background-image: url('../images/background.jpg');
     box-shadow: 0 0 31px 10px #000000;
     margin-top: 0px;
@@ -83,25 +83,30 @@ ul {
  **********************************************/
 .card {
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 100px;
     width: 1900px;
     margin: auto;
     left: 50%;
     margin-left: -950px;
-    padding-left: 30px;
 }
 .card.one {
     z-index: 0;
-    padding-top: 225px;
+    top: 50px;
+    padding-left: 280px;
+    padding-top: 250px;
 }
 .card.two {
     z-index: -1;
-    padding-top: 110px;
+    top: 90px;
+    padding-left: 280px;
+    padding-top: 150px;
 }
 .card.three {
     z-index: -2;
-    padding-top: 0px;
+    top: 80px;
+    padding-left: 280px;
+    padding-top: 100px;
 }
 #image {
     height: 540px;
@@ -113,10 +118,10 @@ ul {
     border: 1px solid #eee;
     box-shadow: 0 0 19px 1px #000000;
     margin-bottom: 70px;
-    height: 610px;
+    height: 465px;
 }
 #image img {
-    height: 540px;
+    height: 400px;
     width: 820px;
 }
 .upload-button {
@@ -159,6 +164,7 @@ article, footer {
 }
 article {
     padding-top: 20px;
+    margin-top:2500px;
 }
 article p, article  ol {
     margin-top: 20px;
@@ -198,6 +204,9 @@ nav div.red {
 nav div.green {
     background-image: url('/static/images/nav-blue.png');
 }
+nav div.yellow {
+    background-image: url('/static/images/nav-yellow.png');
+}
 nav div a:hover {
     color: #fff;
 }
@@ -209,6 +218,7 @@ nav div a:hover {
  **********************************************/
 .addthis_toolbox {
     width: 270px;
+    margin-top: 15px;
     float: right;
     text-align: right;
 }
@@ -244,7 +254,8 @@ footer h3 {
 }
 #logo-right {
     float: right;
-    margin-top: 28px;
+    margin-top: 9px;
+    float: left;
 }
 footer div.nav-top {
     text-align: center;
