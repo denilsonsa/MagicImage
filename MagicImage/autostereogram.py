@@ -77,6 +77,4 @@ def make_stereogram(depthmap_filename, pattern_filename, pattern_width=140, scal
     #Show the final image
     output = cStringIO.StringIO()
     output_img.save(output, format='PNG')
-    return output       
-
-
+    return output

@@ -30,6 +30,7 @@ class Stereogram(webapp2.RequestHandler):
         except:
             self.error(501)
 
+            
 class GetImage(webapp2.RequestHandler):
     def get(self):
         stereo = db.get(self.request.get("img_id"))
@@ -41,4 +42,3 @@ class GetImage(webapp2.RequestHandler):
 
 
 app = webapp2.WSGIApplication([('/', MainPage),('/stereogram', Stereogram),('/img', GetImage)], debug=True)
-
