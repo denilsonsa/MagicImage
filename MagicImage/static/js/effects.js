@@ -1,10 +1,5 @@
 $(function() {
 	var a = document.body, e = document.documentElement;
-	var backgroundPositionX = 0;
-	var backgroundPositionY = 0;
-	$(window).unbind("scroll").scroll(function() {
-		a.style.backgroundPosition = backgroundPositionX + "px " + -(Math.max(e.scrollTop, a.scrollTop) * 5) + "px"
-	});
 	$(".scroll").click(function(event) {
 		event.preventDefault();
 		$('html,body').animate({
@@ -23,9 +18,6 @@ $(function() {
 		var y_rel_2 = 150 - (150 * realtiveY) / 100;
 		var y_rel_1 = 300 - (300 * realtiveY) / 100;
 
-		backgroundPositionX = -(100 - (100 * realtiveX) / 100);
-		backgroundPositionY = -(100 - (100 * realtiveY) / 100);
-
 		mainPositionX = x_rel_1;
 		mainPositionY = y_rel_1;
 
@@ -41,7 +33,5 @@ $(function() {
 			paddingLeft : x_rel_3,
 			paddingTop : y_rel_3
 		});
-		$(document.body).css('backgroundPosition', backgroundPositionX + "px " + backgroundPositionY + "px");
-
 	});
 });
