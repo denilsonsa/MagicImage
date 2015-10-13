@@ -6,10 +6,8 @@
 }
 
 body {
-	background-color: #000;
-	overflow-x: hidden;
-	background-image: url('../images/background-diamonds.jpg');
-	background-attachment: fixed;
+		margin: 0px;
+		padding: 0px;
 }
 
 a {
@@ -17,9 +15,7 @@ a {
 	text-decoration: none;
 }
 
-image {
-	border-width: 0;
-}
+
 
 header {
 	height: 120px;
@@ -56,7 +52,7 @@ ul {
 }
 
 #main {
-	width: 900px;
+	width: 100%;
 	background-color: white;
 	margin: auto;
 	z-index: 1;
@@ -92,6 +88,9 @@ ul {
  * Content
  **********************************************/
 .card {
+	display: none
+}
+.card {
 	position: absolute;
 	text-align: left;
 	top: 100px;
@@ -126,13 +125,12 @@ ul {
 	height: 540px;
 	width: 820px;
 	background-color: white;
-	margin-left: 30px;
 	z-index: -1;
 	padding: 10px;
 	border: 1px solid #eee;
-	box-shadow: 0 0 19px 1px #000000;
 	margin-bottom: 70px;
-	height: 465px;
+	height: 465px;	
+	margin: auto;
 }
 
 #image img {
@@ -375,51 +373,21 @@ footer div.nav-top {
 /**********************************************
  * Button
  **********************************************/
-@media ( max-weight :930px) {
+@media ( min-width :930px) {
 	body {
-		/* background-color: #000; */
-		/* overflow-x: hidden; */
-		/* background-image: url('../images/background-diamonds.jpg'); */
-		/* background-attachment: fixed; */
-		margin: 0px;
-		padding: 0px;
+		background-color: #000;
+		overflow-x: hidden;
+		background-image: url('../images/background-diamonds.jpg');
+		background-attachment: fixed;
 	}
 	#main {
-		width: 100%;
-		/* background-color: white; */
-		/* margin: auto; */
-		/* z-index: 1; */
-		/* border: 1px solid #333; */
-		/* background-image: url('../images/background.jpg'); */
-		/* box-shadow: 0 0 31px 10px #000000; */
-		/* margin-top: 0px; */
-		/* position: relative; */
+		width: 900px;
 	}
-	.card {
-		display: none
-	}
+.card {
+	display: block;
+}
+
 	#image {
-		/* height: 540px; */
-		/* width: 820px; */
-		/* background-color: white; */
-		margin: auto;
-		/* z-index: -1; */
-		/* padding: 10px; */
-		/* border: 1px solid #eee; */
-		/* box-shadow: 0 0 19px 1px #000000; */
-		/* margin-bottom: 70px; */
-		/* height: 465px; */
-	}
-	#image {
-		height: 540px;
-		width: 820px;
-		background-color: white;
-		margin: auto;
-		z-index: -1;
-		padding: 10px;
-		border: 1px solid #555;
-		/* box-shadow: 0 0 19px 1px #000000; */
-		margin-bottom: 70px;
-		height: 465px;
+		box-shadow: 0 0 19px 1px #000000;
 	}
 }
