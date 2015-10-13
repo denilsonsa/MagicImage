@@ -20,7 +20,6 @@ a {
 header {
 	height: 120px;
 	background-image: url('../images/header.png');
-	margin-bottom: 30px;
 }
 
 h2, p {
@@ -48,7 +47,6 @@ ul {
  **********************************************/
 #top {
 	margin-top: 0px;
-	padding-top: 23px;
 }
 
 #main {
@@ -56,7 +54,6 @@ ul {
 	background-color: white;
 	margin: auto;
 	z-index: 1;
-	border: 1px solid #333;
 	background-image: url('../images/background.jpg');
 	box-shadow: 0 0 31px 10px #000000;
 	margin-top: 0px;
@@ -127,7 +124,7 @@ ul {
 	background-color: white;
 	z-index: -1;
 	padding: 10px;
-	border: 1px solid #eee;
+	border: 1px solid #444;
 	margin-bottom: 70px;
 	height: 465px;	
 	margin: auto;
@@ -370,6 +367,14 @@ footer div.nav-top {
 .button.big {
 	font-size: 20px;
 }
+nav{
+	display: none;
+}
+nav.700{
+	display: block;
+  margin-bottom: 30px;
+
+}
 /**********************************************
  * Button
  **********************************************/
@@ -382,12 +387,31 @@ footer div.nav-top {
 	}
 	#main {
 		width: 900px;
-	}
+
+  border: 1px solid #333;
+}
+
 .card {
 	display: block;
 }
 
 	#image {
 		box-shadow: 0 0 19px 1px #000000;
+		border: 1px solid #eee;
 	}
+	
+	header {
+  margin-bottom: 30px;
+}
+	
+	#top {
+
+  padding-top: 23px;
+}
+nav{
+	display: block;
+}
+nav.700{
+	display: none;
+}
 }
