@@ -57,7 +57,7 @@ ul {
 	margin: auto;
 	z-index: 1;
 	background-image: url('../images/background.jpg');
-	box-shadow: 0 0 31px 10px #000000;
+	
 	margin-top: 0px;
 	position: relative;
 }
@@ -174,7 +174,7 @@ div.upload-button:hover {
 }
 
 article, footer {
-	width: 85%;
+	width: 95%;
 	margin: auto;
 	margin-bottom: 700px;
 }
@@ -391,7 +391,7 @@ nav.low{
 	}
 	#main {
 		width: 900px;
-
+box-shadow: 0 0 31px 10px #000000;
   border: 1px solid #333;
 }
 
@@ -411,7 +411,10 @@ nav.low{
 nav{
 	display: block;
 }
-nav.700{
+nav.low{
 	display: none;
+}
+article, footer {
+	width: 85%;
 }
 }
