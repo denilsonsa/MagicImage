@@ -1,11 +1,12 @@
-$(function() {
-	var a = document.body, e = document.documentElement;
-	$(".scroll").click(function(event) {
-		event.preventDefault();
-		$('html,body').animate({
-			scrollTop : $(this.hash).offset().top
-		}, 2000, 'easeInOutExpo');
-	});
+var a = document.body, e = document.documentElement;
+$(".scroll").click(function(event) {
+	event.preventDefault();
+	$('html,body').animate({
+		scrollTop : $(this.hash).offset().top
+	}, 2000, 'easeInOutExpo');
+});
+
+function mouseEventHandler(){
 	$(document).mousemove(function(e) {
 		var realtiveX = Math.round((e.pageX * 100) / $(window).width());
 		var realtiveY = Math.round((e.pageY * 100) / $(window).height());
@@ -34,4 +35,4 @@ $(function() {
 			paddingTop : y_rel_3
 		});
 	});
-});
+}

@@ -19,6 +19,14 @@
 		<script type="text/javascript" src="/static/js/jquery-ui-1.8.22.custom.min.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Marko+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+		<script type="text/javascript">
+		$(function() {
+			var viewport = $(window).width();
+			if(viewport >= 700){
+				mouseEventHandler()
+			}
+		});
+		</script>		
 	</head>
 	<body>
 		<div id="top">
@@ -37,6 +45,17 @@
 					</nav>
 					<a href="http://magic-image.appspot.com/"><img id="logo" alt="The Magic Image" src="/static/images/logo.png" /></a>
 				</header>
+				<nav>
+					<div class="red">
+						<a class="scroll" href="#about">About</a>
+					</div>
+					<div class="green">
+						<a href="https://github.com/cobalys/MagicImage">Fork me</a>
+					</div>
+					<div class="blue">
+						<a class="scroll" href="#instructions">Instructions</a>
+					</div>
+				</nav>
 				<div id="image">
 					{% if image_id %}
 					<img alt="Stereogram" src="img?img_id={{ image_id }}"/>
