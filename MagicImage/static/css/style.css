@@ -281,11 +281,24 @@ footer div.nav-top {
 	width: 100%;
 	clear: both;
 }
+
 nav.low {
-  width: 100%;
+	width: 100%;
 }
+
 nav.low div {
-  width: 30%;
+	width: 30%;
+}
+
+nav {
+	display: none;
+}
+
+nav.low {
+	display: block;
+	height: 28px;
+	position: absolute;
+	bottom: 0;
 }
 /**********************************************
  * Responsive
@@ -383,8 +396,7 @@ nav.low div {
 	border-color: #2a65a0;
 	border-bottom-color: #3884cd;
 	background-color: #3072b3;
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3),
-		to(#599bdc));
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3),to(#599bdc));
 	background-image: -moz-linear-gradient(#3072b3, #599bdc);
 	background-image: -ms-linear-gradient(#3072b3, #599bdc);
 	background-image: -o-linear-gradient(#3072b3, #599bdc);
@@ -398,19 +410,9 @@ nav.low div {
 /* Big button
  ========================================================================== */
 .button.big {
-	font-size: 20px;
+	font-size: 18px;
 }
 
-nav {
-	display: none;
-}
-
-nav.low {
-	display: block;
-	height: 28px;
-	position: absolute;
-	bottom: 0;
-}
 /**********************************************
  * Button
  **********************************************/
