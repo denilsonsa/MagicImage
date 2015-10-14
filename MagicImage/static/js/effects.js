@@ -6,6 +6,10 @@ $(function() {
 			scrollTop : $(this.hash).offset().top
 		}, 2000, 'easeInOutExpo');
 	});
+	
+	$( window ).resize(function() {
+		this.location.reload(false); 
+	});
 
 	function mouseEventHandler() {
 		$(document).mousemove(function(e) {
