@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Forked from:
-# https://bitbucket.org/denilsonsa/autostereogram
+# https://github.com/denilsonsa/autostereogram
 
 from __future__ import division, print_function, unicode_literals
 import cStringIO
